@@ -1,0 +1,12 @@
+application:
+  name: alertmanager
+  pods:
+  - name: app
+    image: prom/alertmanager:latest
+    path: /
+    servicePorts:
+    - 9093
+    volumes:
+    - name: alertmanager-data
+      mountPath: /alertmanager
+      size: 2Gi
