@@ -2,7 +2,7 @@ application:
   name: alertmanager
   pods:
   - name: app
-    image: prom/alertmanager:latest
+    image: mirror.gcr.io/prom/alertmanager:latest
     path: /
     servicePorts:
     - 9093
